@@ -43,7 +43,7 @@ $codigo=$_POST["codigo"];
 $descripcion=$_POST["descripcion"];
 $almacen=$_POST["almacen"];
 $categoria=$_POST["categoria"];
-$this->sentencia = "UPDATE producto SET nombre='$nombre','$costo','$unidad','$stock','$existencia','$codigo','$descripcion','$almacen','$categoria');";
+$this->sentencia = "UPDATE producto SET nombre='$nombre',costo='$costo',unidad='$unidad',stock='$stock',existencia='$existencia',codigo='$codigo',descripcion='$descripcion',almacen='$almacen',categoria='$categoria' where id_producto=$idModificar";
 $this->ejecutar_sentencia();
 }
 
